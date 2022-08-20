@@ -1,4 +1,4 @@
-## นายนัฐพล  สิงหาด  6310110240
+## ธนภัทร รอดภาษา 6310110188
 ## สรุปการทำงาน
   Web Application ข้างต้นเป็น App ที่ให้เลือก และเรียงคำให้ถูกต้อง เมื่อเรียงคำถูกต้องจะมี Effect Firework เกิดขึ้นพร้อมข้อความสำเร็จ และจะมีปุ่ม reset ไว้สำหรับ reset ค่า หรือเริ่มเกมส์ใหม่, แต่ถ้าหากเรียงตัวอักษรผิด ข้อความที่ active ไว้จะหายไป พร้อมกับแสดงข้อความให้ลองใหม่อีกครั้ง
   เมื่อติดตั้ง react เสร็จสิ้น ในขั้นตอนการ implement จะเริ่มต้นสร้างโฟลเดอร์ components และ lib Folder ไว้ใน src โฟลเดอร์เพื่อจัดระเบียบโครงสร้างโฟลเดอร์ให้เป็นระเบียบ ในโฟลเดอร์ Component จะจัดเก็บ Components ต่างๆ ไม่ว่าจะเป็น CharacterCard, WordCard ในส่วนของ lib folder จะจัดเก็บ libraries ต่างๆ ในที่นี้จะเป็น canvas-confett โดยสามารถติดตั้งโดยใช้ npm i canvas-confetti ในส่วนของ App.js จะ import WordCard โดยจะส่ง props value คือ "hello" ในส่วนของ WordCard Component จะสร้าง state ไว้เก็บค่าจากฟังก์ชัน prepareStateFromWord โดยจะส่ง prop value ไป และจะ return ค่ากลับมา จากนั้นจะนำค่าที่ได้มา map (state.chars) โดยจะส่งค่าไปยัง CharacterCard Component อีกทีนึง โดย prop ที่ส่งไปจะมี 
